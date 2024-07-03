@@ -1,8 +1,38 @@
-# React + Vite
+# Project 11.4: Rock the Code - Technical Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+**Project Name:** Project 11.4: Rock the Code  
+**Repository:** [GitHub - danielemazzola/proyect-11.4](https://github.com/danielemazzola/proyect-11.4)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a simple calculator application built with React and Vite. The application allows users to perform basic arithmetic operations and view the history of their calculations.
+
+## Technologies Used
+
+| Technology       | Description                                           |
+| ---------------- | ----------------------------------------------------- |
+| React            | A JavaScript library for building user interfaces.    |
+| Vite             | A build tool that provides a fast development server. |
+| JavaScript (ES6) | The programming language used for the application.    |
+| CSS              | Styling for the application UI.                       |
+| HTML             | Structure of the application.                         |
+
+## Project Structure
+
+```
+proyect-11.4/
+│
+├── src/
+│ ├── components/
+│ │ └── Calculator.js # Main calculator component
+│ ├── App.js # Root component
+│ ├── main.js # Entry point for the React application
+│ ├── index.css # Global styles
+│ └── Calculator.css # Styles for the calculator component
+│
+├── .gitignore # Git ignore file
+├── index.html # HTML template
+├── package.json # Project metadata and dependencies
+├── README.md # Project documentation
+└── vite.config.js # Vite configuration
+```
