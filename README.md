@@ -24,15 +24,54 @@ proyect-11.4/
 │
 ├── src/
 │ ├── components/
-│ │ └── Calculator.js # Main calculator component
-│ ├── App.js # Root component
-│ ├── main.js # Entry point for the React application
-│ ├── index.css # Global styles
-│ └── Calculator.css # Styles for the calculator component
+│ │ └── calculator
+│ │ │ └── Calculator.jsx
+│ │ │ └── Calculator.css
+│ │ └── time
+│ │ │ └── Time.jsx
+│ │ │ └── Time.css
+├─├── hooks/
+│ │ └── useTime.jsx
+│ ├── App.js
+│ ├── main.js
+│ ├── index.css
+│ └── Calculator.css
 │
-├── .gitignore # Git ignore file
-├── index.html # HTML template
-├── package.json # Project metadata and dependencies
-├── README.md # Project documentation
-└── vite.config.js # Vite configuration
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
 ```
+
+## Custom Hook: useTime
+
+The `useTime` custom hook provides a way to fetch and update the current time in a React component.
+
+### Usage
+
+1. **Import the Hook:**
+
+   ```javascript
+   import useTime from './useTime'
+   ```
+
+2. **Call the Hook:**
+
+```
+const currentTime = useTime();
+```
+
+## Display the Time:
+
+Use the `currentTime` variable wherever you need to display the current time.
+
+## How it Works
+
+The `useTime` hook uses React's `useState` and `useEffect` hooks to manage and update the current date and time:
+
+- **useState:** Initializes `currentDate` state with the current date and time (`new Date()`).
+
+- **useEffect:** Sets up an interval that updates `currentDate` every second (1000 milliseconds). This ensures that the time displayed is always up-to-date.
+
+- **Cleanup:** The interval is cleared when the component unmounts to avoid memory leaks (`clearInterval(intervalTime)`).

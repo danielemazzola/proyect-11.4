@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Time from './components/Time/Time'
+import Time from './components/time/Time'
 import useTime from './hooks/useTime'
-import Calcolator from './components/calcolator/Calculator'
+import Calcolator from './components/calculator/Calculator'
 
 const App = () => {
   const currentDate = useTime()
