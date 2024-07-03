@@ -1,0 +1,20 @@
+.result {
+  background-color: white;
+  border-radius: 5px;
+  color: #242424;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 50px 0;
+}
+.btnControllers {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.btnControllers > button {
+  background-color: white;
+  color: #242424;
+  font-weight: bold;
+  font-size: 1rem;
+}
