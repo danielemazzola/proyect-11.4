@@ -1,4 +1,4 @@
-# Project 11.4: Rock the Code - Technical Documentation
+# Project 11.4: Rock the Code🎸 - Technical Documentation
 
 ## Overview
 
@@ -19,7 +19,6 @@ This project is a simple calculator application built with React and Vite. The a
 
 ## Project Structure
 
-```
 proyect-11.4/
 │
 ├── src/
@@ -42,7 +41,6 @@ proyect-11.4/
 ├── package.json
 ├── README.md
 └── vite.config.js
-```
 
 ## Custom Hook: useTime
 
