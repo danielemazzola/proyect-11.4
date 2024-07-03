@@ -34,6 +34,7 @@ const Calculator = () => {
 
     resultRef.current.textContent = `Resultado: ${result}`
     historyRef.current.push(result)
+    historyRef.current.sort((a, b) => a - b)
     inputRef.current.value = ''
     numOneRef.current = null
     operatorRef.current = null
